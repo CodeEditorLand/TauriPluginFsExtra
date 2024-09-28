@@ -1,5 +1,15 @@
 {
+<<<<<<< HEAD
 	"name": "tauri-plugin-fs-extra-api",
+=======
+	"authors": [
+		"Tauri Programme within The Commons Conservancy"
+	],
+	"browser": "dist-js/index.min.js",
+	"dependencies": {
+		"@tauri-apps/api": "2.0.0-rc.5"
+	},
+>>>>>>> 6ca7a261a179aff97b4b00a5162bacd266b0c887
 	"description": "Additional file system methods not included in the core API.",
 	"exports": {
 		"browser": "./dist-js/index.min.js",
