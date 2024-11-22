@@ -116,6 +116,7 @@ export async function metadata(path: string): Promise<Metadata> {
 		path,
 	}).then((metadata) => {
 		const { accessedAtMs, createdAtMs, modifiedAtMs, ...data } = metadata;
+
 		return {
 			accessedAt: new Date(accessedAtMs),
 			createdAt: new Date(createdAtMs),
