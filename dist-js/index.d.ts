@@ -84,4 +84,5 @@ export interface Metadata {
 	blocks: number | undefined;
 }
 export declare function metadata(path: string): Promise<Metadata>;
+
 export declare function exists(path: string): Promise<boolean>;
