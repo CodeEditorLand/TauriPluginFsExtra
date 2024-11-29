@@ -93,21 +93,37 @@ export interface Metadata {
 
 interface BackendMetadata {
 	accessedAtMs: number;
+
 	createdAtMs: number;
+
 	modifiedAtMs: number;
+
 	isDir: boolean;
+
 	isFile: boolean;
+
 	isSymlink: boolean;
+
 	size: number;
+
 	permissions: Permissions;
+
 	dev: number | undefined;
+
 	ino: number | undefined;
+
 	mode: number | undefined;
+
 	nlink: number | undefined;
+
 	uid: number | undefined;
+
 	gid: number | undefined;
+
 	rdev: number | undefined;
+
 	blksize: number | undefined;
+
 	blocks: number | undefined;
 }
 
