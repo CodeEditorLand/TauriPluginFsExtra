@@ -87,8 +87,11 @@ fn system_time_to_ms(time:std::io::Result<SystemTime>) -> u64 {
 #[command]
 async fn metadata(path:PathBuf) -> Result<Metadata> {
 	let metadata = std::fs::metadata(path)?;
+
 	let file_type = metadata.file_type();
+
 	let permissions = metadata.permissions();
+
 	Ok(Metadata {
 		accessed_at_ms:system_time_to_ms(metadata.accessed()),
 		created_at_ms:system_time_to_ms(metadata.created()),
