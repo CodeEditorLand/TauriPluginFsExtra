@@ -11,11 +11,11 @@ use std::{
 	time::{SystemTime, UNIX_EPOCH},
 };
 
-use serde::{ser::Serializer, Serialize};
+use serde::{Serialize, ser::Serializer};
 use tauri::{
+	Runtime,
 	command,
 	plugin::{Builder as PluginBuilder, TauriPlugin},
-	Runtime,
 };
 
 type Result<T> = std::result::Result<T, Error>;
